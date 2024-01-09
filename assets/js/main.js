@@ -16,7 +16,7 @@ window.addEventListener("click", (event) => {
   } else {
     menu.classList.add("translate-x-full");
   }
-  // Toggling image popup bix ------
+  // Toggling image popup box ------
   if (
     target.classList.contains("imageBox") ||
     target.classList.contains("viewBox")
@@ -34,7 +34,7 @@ imageBoxes.forEach((imageBox) => {
       .getPropertyValue("background-image")
       .replaceAll('url("', "")
       .replaceAll('")', "");
-    viewBox.innerHTML = `<img src="${imageURL}" class="w-full viewBox" />`;
+    viewBox.innerHTML = `<img src="${imageURL}" class="w-full h-full viewBox" />`;
     viewBoxContainer.style.display = "flex";
   });
 });
